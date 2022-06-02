@@ -1,2 +1,3 @@
 # rsschool-cv
-JS/FE Pre-School 2022Q2
+__Markdown:__[ CV](https://sesychev.github.io/rsschool-cv/cv)  
+__HTML:__[ CV](https://sesychev.github.io/rsschool-cv/)

@@ -1,6 +1,6 @@
 # Sergey Sychev
 
-![alt text](/img/IMG_7201.jpg)
+![alt text](./img/IMG_7201.jpg)
 
 ### CONTACTS
 
@@ -27,11 +27,11 @@ Awarded the first prize in Republican contest of students' scientific works of h
 ### GRANTS
 
 **Russian Scientific Foundation grant, 2018**  
-Title: 'Synthesis of ceramic composite coatings on metals with increased strength and anticorrosion properties by micro-arc oxidation'  
+Title: 'Synthesis of ceramic composite coatings on metals with increased strength and anticorrosion properties by micro-arc oxidation'.  
 Project number: 18-73-00025
 
 **Russian Scientific Foundation grant, 2010**  
-Title: 'Experimental and theoretical study of nonlinear dynamic effects of cluster formation during surface and subsurface destruction in tribological systems at nano- and meso-scale levels'  
+Title: 'Experimental and theoretical study of nonlinear dynamic effects of cluster formation during surface and subsurface destruction in tribological systems at nano- and meso-scale levels'.  
 Project number: 10-08-00966
 
 ---

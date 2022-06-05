@@ -1,1 +1,222 @@
-p { color: red; }
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/*https: //www.freepik.com/free-vector/modern-cv-template_13234784.htm#query=cv%20template&position=34&from_view=keyword#position=34&query=cv%20template*/
+.wrapper {
+	max-width: 1280px;
+	margin: auto;
+	padding: 0 40px;
+	width: 100%;
+	font-size: 0;
+	display: grid;
+	grid-template-areas:
+		"head head head"
+		"about about about"
+		"aside main main"
+		"aside award award"
+		"aside grant grant"
+		"aside certificat certificat"
+		"aside foot foot";
+}
+
+.header {
+	grid-area: head;
+}
+
+.aside {
+	grid-area: aside;
+	background-color: cornsilk;
+}
+
+.main {
+	grid-area: main;
+	background-color:burlywood;
+}
+
+.grants {
+	grid-area: grant;
+}
+
+.awards {
+	grid-area: award;
+}
+
+.certifications {
+	grid-area: certificat;
+}
+
+.footer {
+	grid-area: foot;
+}
+
+.temp {
+	display: grid;
+	grid-template-areas:
+	"a b b";
+}
+
+.year {
+	grid-area: a;
+}
+
+.content {
+	grid-area: b;
+}
+
+/* Header */
+.container-header {
+	display: grid;
+	grid-template-areas:
+		"a b";
+}
+
+.cv-img {
+	grid-area: a;
+	width: 500px;
+}
+
+.contacts{
+	grid-area: b;
+	background: darkgrey;
+}
+
+.header-title {
+	text-align: center;
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 110%;
+	letter-spacing: 0.06em;
+}
+
+/*About*/
+.about {
+	grid-area: about;
+	background:goldenrod;
+}
+
+.about-content {
+
+}
+
+.about-img {
+
+}
+
+.about-content__content {
+
+}
+
+.about-heading {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.about-subheading {
+	font-family: 'Arial';
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 160%;
+	color: #4C4C4C;
+	/*list-style-type: none;*/
+}
+
+/* Main */
+
+h1 {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 110%;
+	letter-spacing: 0.06em;
+	color: #545454;
+	text-decoration: none;
+}
+
+h2 {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 44px;
+	line-height: 130%;
+	/* or 57px */
+	display: flex;
+	align-items: center;
+}
+
+h3 {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 130%;
+	/* or 45px */
+	letter-spacing: 0.06em;
+	color: #545454;
+}
+
+h4 {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 115%;
+	/* identical to box height, or 23px */
+	letter-spacing: 0.06em;
+	color: #545454;
+}
+
+h5 {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 110%;
+	/* identical to box height, or 17px */
+	letter-spacing: 0.06em;
+	color: #545454;
+}
+
+.nav {
+	width: 75%;
+
+	padding-top: 16px;
+	padding-bottom: 17px;
+	background-color: brown;
+}
+
+.nav-links {
+	list-style-type: none;
+
+	display: flex;
+	justify-content: space-between;
+
+	text-align: right;
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 160%;
+}
+
+.nav-link a {
+	color: #CDCDCD;
+	text-decoration: none;
+	transition: color 0.2s linear;
+}
+
+.nav-link__active a {
+	color: #FAFAFA;
+	border-bottom: 3px solid #F1CDB3;
+}
+
+.nav-link a:hover {
+	color: #FAFAFA;
+}
+

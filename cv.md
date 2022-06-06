@@ -56,15 +56,15 @@ Project number: 10-08-00966
 
 **2008 – 2009**  
 **Mathematician-programmer**  
-Belarusian State University, Faculty of advanced training and retraining Minsk, Belarus
+Belarusian State University, Faculty of advanced training and retraining, Minsk, Belarus
 
 **2004 – 2005**  
 **Degree of Master in Manufacturing Technology**  
-Polotsk State University Novopolotsk, Belarus
+Polotsk State University, Novopolotsk, Belarus
 
 **1999 – 2004**  
 **Specialist Degree in Manufacturing Engineering**  
-Belarusian-Russian University Mogilev, Belarus
+Belarusian-Russian University, Mogilev, Belarus
 
 **1995 – 1999**  
 **Diploma of Specialized Secondary Education in Electrical Engineering**  

@@ -8,11 +8,14 @@
     <title>CV</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="grid">
 
         <header class="header">
             <nav class="nav">
                 <ul class="nav-links">
+                    <li class="nav-link">
+                        <a href="#home">HOME</a>
+                    </li>
                     <li class="nav-link">
                         <a href="#about">ABOUT</a>
                     </li>
@@ -33,9 +36,13 @@
                     </li>
                 </ul>
             </nav>
+        </header>
+
+        <section id="home" class="home">
             <h1 class="header-title">Sergey Sychev</h1>
-        <div class="container-header">
-            <img class="cv-img" src="./img/IMG_7201.jpg" alt="cv-img">
+            <div class="container-home">
+                <img class="cv-img" src="./img/IMG_7201.jpg" alt="cv-img">
+            </div>
         <section id="contacts" class="contacts">
             <div class="container-contacts">
                 <div class="contacts-content">
@@ -50,9 +57,9 @@
                 </div>
             </div>
         </section>
-        </div>
-        </header>
-
+        </section>
+        
+        <main class="main">
         <section id="about" class="about">
             <div class="container-about">
                 <div class="about-content">
@@ -74,73 +81,78 @@
                 </div>
             </div>
         </section>
-        
-        <main class="main">
-            <section id="education" class="education">
-                <div class="container-education">
+
+        <section id="education" class="education">
+            <div class="container-education">
+                    <h4 class="heading">EDUCATION</h4>
                     <div class="education-content">
-                        <h4 class="about-heading">EDUCATION</h4>
-                        <ul class="about-subheading">
-                            <div class="temp">
-                            <li class="year">2008 – 2009</li>
-                            <li class="content">Mathematician-programmer<br>Belarusian State University, Faculty of advanced
-                                training and retraining Minsk, Belarus
-                            </li>
-                            </li>
-                            </div>
-                        </ul>
-                        <ul class="about-subheading">
-                            <li>2004 – 2005<br>Degree of Master in Manufacturing Technology<br>Polotsk State University
-                                Novopolotsk,
-                                Belarus
-                            </li>
-                        </ul>
-                        <ul class="about-subheading">
-                            <li>1999 – 2004<br>Specialist Degree in Manufacturing Engineering<br>Belarusian-Russian University
-                                Mogilev, Belarus
-                            </li>
-                        </ul>
-                        <ul class="about-subheading">
-                            <li>1995 – 1999<br>Diploma of Specialized Secondary Education in Electrical Engineering<br>Orsha
-                                State
-                                College of Railway Transport, Belarus
-                            </li>
-                        </ul>
+                        <div class="year">2008 – 2009</div>
+                        <div class="content">Mathematician-programmer<br>Belarusian State University, Faculty of advanced training and retraining, Minsk, Belarus</div>
+                        <div class="year">2004 – 2005</div>
+                        <div class="content">Master in Manufacturing Technology<br>Polotsk State University, Novopolotsk, Belarus</div>
+                        <div class="year">1999 – 2004</div>
+                        <div class="content">Master in Manufacturing Engineering<br>Belarusian-Russian University, Mogilev, Belarus</div>
                     </div>
+            </div>
+        </section>
+
+        <section id="interests" class="interests">
+            <div class="container-interests">
+                <div class="interests-content">
+                    <h4 class="about-heading">RESEARCH INTERESTS</h4>
+                    <ul class="about-subheading">
+                        <li>Acoustic Emission (AE)</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Data Analysis</li>
+                        <li>Digital signal processing (DSP)</li>
+                        <li>Digital Twin</li>
+                        <li>Finite Element Analysis (FEA)</li>
+                        <li>Industrial Internet of Things (IIoT) or Industry 4.0/5.0</li>
+                        <li>Machine Learning</li>
+        
+                    </ul>
                 </div>
-            </section>
-            <section id="experience" class="experience">
-                <div class="container-experience">
-                    <div class="experience-content">
-                        <h4 class="about-heading">WORK EXPERIENCE</h4>
-                        <ul class="about-subheading">
-                            <li>2018 – 2021<br>Project BIM Manager<br>Renaissance Construction St. Petersburg, Russia</li>
-                        </ul>
-                        <ul class="about-subheading">
-                            <li>2017 – 2018<br>Senior BIM Manager<br>JSC «RUSAL VAMI» St. Petersburg, Russia</li>
-                        </ul>
-                        <ul class="about-subheading">
-                            <li>2016 – 2017<br>Design Engineer<br>TechnoSystems Company Ltd St. Petersburg, Russia</li>
-                        </ul>
-                        <ul class="about-subheading">
-                            <li>2015 – 2016<br>BIM Coordinator<br>Spectrum Group St. Petersburg, Russia</li>
-                        </ul>
-                        <ul class="about-subheading">
-                            <li>2014 – 2015<br>BIM Specialist<br>JSC KB VIPS St. Petersburg, Russia</li>
-                        </ul>
-                        <ul class="about-subheading">
-                            <li>2010 – 2014<br>Piping Design Engineer<br>LLC «Ecostroy» St. Petersburg, Russia</li>
-                        </ul>
-                    </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container-experience">
+                <h4 class="heading">WORK EXPERIENCE</h4>
+                <div class="experience-content">
+                    <div class="year">BIM Manager<br>2018 – 2021</div>
+                    <div class="content">Renaissance Construction St. Petersburg, Russia<br>Development and approval of BIM
+                            Execution Plans (BEPs) and Employer's Information Requirements (EIRs). Managing the
+                            project Common Data Environments (CDE) using BIM 360. Preparation of BIM models and asset information
+                            for handover to client. Attending coordination meetings.</div>
+                    <div class="year">BIM Manager<br>2017 – 2018</div>
+                    <div class="content">JSC «RUSAL VAMI» St. Petersburg, Russia<br>Implementation of BIM technology in the
+                            internal business processes of the company and ensuring the effective work of
+                            BIM team. BIM software selection and evaluation. Ensure ongoing development and implementation of
+                            standards, templates and libraries. Identify/undertake training needs when require.</div>
+                    <div class="year">Design Engineer<br>2016 – 2017</div>
+                    <div class="content">TechnoSystems Company Ltd St. Petersburg, Russia<br>Development of equipment and
+                            professional solutions for the safe discharge, transportation, storage, transshipment,
+                            bunkering, accounting, measurement and delivery of liquid, bulk and gaseous cargo.</div>
+                    <div class="year">BIM Coordinator<br>2015 – 2016</div>
+                    <div class="content">Spectrum Group St. Petersburg, Russia<br>Support the BIM manager in all activities.
+                            Support project team on BIM tools and uses. Supporting projects with
+                            implementing 3D coordination and federation, visualization, 4D animations, 5D quantity take-off and
+                            costs. Prepare BIM Execution Plan for Projects.</div>
+                    <div class="year">BIM Specialist<br>2014 – 2015</div>
+                    <div class="content">JSC KB VIPS St. Petersburg, Russia<br>Implementation BIM modelling technology.
+                            Assistance with clash detection and conflict resolution using Navisworks.
+                            Undertaking modelling exercises in Revit to assist the site team.</div>
+                    <div class="year">Design Engineer<br>2010 – 2014</div>
+                    <div class="content">LLC «Ecostroy» St. Petersburg, Russia<br>Design pipe systems for transporting petroleum
+                            products.</div>
                 </div>
-            </section>
-        </main>
- 
-        <aside class="aside">
+            </div>
+        </section>
+
         <section id="skills" class="skills">
             <div class="container-skills">
                 <div class="skills-content">
-                    <h4 class="about-heading">TECHNICAL SKILLS</h4>
+                     <h4 class="about-heading">TECHNICAL SKILLS</h4>
                     <ul class="about-subheading">
                         BIM and 3D Modelling:
                         <li>AutoCAD</li>
@@ -160,28 +172,27 @@
                         <li>Tribology</li>
                         <li>Vibration</li>
                         <li>Wavelets</li>
-                        </ul>
-                </div>
-            </div>
-        </section>
-        <section id="interests" class="interests">
-            <div class="container-interests">
-                <div class="interests-content">
-                    <h4 class="about-heading">RESEARCH INTERESTS</h4>
-                    <ul class="about-subheading">
-                        <li>Acoustic Emission (AE)</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Data Analysis</li>
-                        <li>Digital signal processing (DSP)</li>
-                        <li>Digital Twin</li>
-                        <li>Finite Element Analysis (FEA)</li>
-                        <li>Industrial Internet of Things (IIoT) or Industry 4.0/5.0</li>
-                        <li>Machine Learning</li>
-
                     </ul>
                 </div>
             </div>
+            <div class="container-codes">
+                <div class="code-content">
+                    <h4 class="about-heading">CODE EXAMPLE</h4>
+                    <pre>
+                        <code>
+                            <span>public class CustomMath { 
+                                public static int multiply(int a, int b) {
+                                        return a * b;
+                                    }
+                                }</span>
+                            </code>
+                        </pre>
+                </div>
+            </div>
         </section>
+        </main>
+ 
+        <footer class="footer">
         <section id="courses" class="courses">
             <div class="container-courses">
                 <div class="courses-content">
@@ -197,6 +208,7 @@
                 </div>
             </div>
         </section>
+        
         <section id="languages" class="languages">
             <div class="container-languages">
                 <div class="languages-content">
@@ -209,35 +221,18 @@
                 </div>
             </div>
         </section>
-        <section id="code" class="code">
-            <div class="container-codes">
-                <div class="code-content">
-                    <h4 class="about-heading">CODE EXAMPLE</h4>
-                    <pre>
-                                <code>
-                                    <span>public class CustomMath { 
-                                    public static int multiply(int a, int b) {
-                                    return a * b;
-                                        }
-                                    }</span>
-                                </code>
-                            </pre>
-                </div>
-            </div>
-        </section>
-        </aside>
 
         <section id="awards" class="awards">
-            <div class="container-awards">
+             <div class="container-awards">
                 <div class="awards-content">
                     <h4 class="about-heading">AWARDS</h4>
                     <div class="about-subheading">Awarded the first prize in Republican contest of students' scientific works of
                         higher education institutions of the Republic of Belarus for the scientific research paper 'Finite
-                        Element modelling of orthogonal metal
-                        cutting process by the tool with anti-wear coating', 2005</div>
+                        Element modelling of orthogonal metal cutting process by the tool with anti-wear coating', 2005</div>
                 </div>
             </div>
         </section>
+ 
         <section id="grants" class="grants">
             <div class="container-grants">
                 <div class="grants-content">
@@ -257,34 +252,18 @@
                 </div>
             </div>
         </section>
+
         <section id="certifications" class="certifications">
-            <div class="container-certifications">
+                <div class="empty">
+                </div>
                 <div class="certifications-content">
                     <h4 class="about-heading">CERTIFICATIONS</h4>
                     <ol class="about-subheading">
                         <li>International English Language Testing System (IELTS), British Council</li>
                         <li>O nível А2 do curso de Português Língua de AcolhimentoO nível А2 do curso de Português Língua de
-                            Acolhimento, Centro de
-                            Emprego е Formação Profissional de Coimbra</li>
+                            Acolhimento, Centro de Emprego е Formação Profissional de Coimbra</li>
                     </ol>
                 </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-        <section id="contacts" class="contacts">
-            <div class="container-contacts">
-                <div class="contacts-content">
-                    <h4 class="about-heading">CONTACTS</h4>
-                    <ul class="about-subheading">
-                        <li>E-mail: sergeysychou@gmail.com</li>
-                        <li>ORCID iD: 0000-0001-8213-7374</li>
-                        <li>LinkedIn: Sergey Sychev</li>
-                        <li>GitHub: sesychev</li>
-                        <li>Projects: CV</li>
-                    </ul>
-                </div>
-            </div>
         </section>
         </footer>
 

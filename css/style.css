@@ -6,18 +6,27 @@
 	box-sizing: border-box;
 }
 /*https: //www.freepik.com/free-vector/modern-cv-template_13234784.htm#query=cv%20template&position=34&from_view=keyword#position=34&query=cv%20template*/
+/*https: //rs.school/js/*/
 .grid {
 	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
 	grid-template-areas:
-	"head head head"
-	"home home home"
-	"main main main"
-	"footer footer footer";
+	"head"
+	"home"
+	"main"
+	"footer";
 	max-width: 1280px;
 	margin: auto;
 	padding: 0 40px;
 	width: 100%;
+	height: 100vh;
 	font-size: 0;
+	font-family: 'AvantGarde';
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 160%;
+	color: black;
 }
 
 .wrapper {
@@ -54,36 +63,45 @@
 	background: darkgrey;
 }
 
-.aside {
-	grid-area: aside;
-	background-color: cornsilk;
+.icon {
+	width:43%;
 }
 
 .main {
 	grid-area: main;
 	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 350px;
 	grid-template-areas:
-	"about about about"
-	"interest education education"
-	"experience experience skill";
-	background-color:burlywood;
+	"about about about about"
+	"interest education education education"
+	"experience experience experience skill"
+	"experience experience experience language"
+	"code grant grant grant"
+	"code award award award"
+	"course award award award"
+	"course certificat certificat certificat";
 }
 
 .about {
 	grid-area: about;
-	background-color: goldenrod;
+	background-color: rgb(228, 222, 208);
+	padding: 0 1.5em;
 }
 
-.interest {
+.interests {
 	grid-area: interest;
+	width: auto;
+	background-color: rgba(245, 238, 225);
 }
 
 .education {
 	grid-area: education;
+	background-color: rgb(236, 207, 168);
 }
 
 .experience {
 	grid-area: experience;
+	background-color: burlywood;
 }
 
 .skills {
@@ -91,23 +109,9 @@
 	background-color: rgb(241, 189, 124);
 }
 
-.container-codes {
-	background-color: rgb(32, 218, 131);
-}
-
-.footer {
-	grid-area: footer;
-	display: grid;
-	grid-template-areas:
-	"course grant grant"
-	"language award award"
-	"a certificat certificat";
-	background-color: burlywood;
-}
-
 .courses {
 	grid-area: course;
-	background-color: rgba(245, 238, 225, 0.959);
+	background-color: rgba(245, 238, 225);
 }
 
 .grants {
@@ -122,77 +126,82 @@
 
 .awards {
 	grid-area: award;
-	background-color: rgb(226, 187, 137);
 }
 
 .certifications {
 	grid-area: certificat;
-	padding-bottom: 60px;
+	background-color: burlywood;
+}
+
+.code {
+	grid-area: code;
+	width: max-content;
+	/*letter-spacing: normal;*/
+	background-color:aliceblue;
+}
+
+.footer {
+	grid-area: footer;
+	display: grid;
+	grid-template-columns: 150px 1fr 300px;
+	grid-template-areas:
+	"author logo author";
+	justify-items: start;
+	align-items: end;
+}
+
+.rsschool-logo {
+	grid-area: logo;
+	grid-column: 2 / 3;
+	width: auto;
+}
+
+.author {
+	grid-area: author;
+	grid-column: 3 / 4;
+	width: max-content;
+	height: max-content;
+	display: grid;
+	grid-template-columns: 1em 1fr;
+	grid-template-areas: 
+	"icon a";
+}
+
+.copyright-icon {
+	align-self: center;
+	width: 1em;
+	margin-right: 1em;
+}
+
+.heading-icon {
+	/*width: max-content;*/
 }
 
 /* Header */
-.header-title {
-	/*text-align: center;*/
-	font-family: 'Georgia';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 32px;
-	line-height: 110%;
-	letter-spacing: 0.06em;
-}
-
-.container-home {
-
-}
-
-/*About*/
-
-.container-about {
-	/*max-width: 1280px;*/
-}
-
-.about-content {
-
-}
-
-.about-img {
-
-}
-
-.about-content__content {
-
-}
-
-.about-heading {
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.about-subheading {
-	font-family: 'Arial';
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 160%;
-	color: #4C4C4C;
-	list-style-type: none;
-}
 
 /* Main */
 
-.education {
-	background-color: rgb(177, 105, 11);
-}
 
 .education-content {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
+}
 
-	font-family: 'Arial';
-	font-weight: 400;
-	font-size: 15px;
+.year {
+	justify-self: center;/*hor*/
+	align-self: center;/*ver*/
+	font-weight: 700;
+	font-size: 16px;
 	line-height: 160%;
-	color: #4C4C4C;
+	color: #004f49;
+	width: max-content;
+	text-align: center;
+}
+
+.experience-content {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+
 }
 
 .heading {
@@ -201,105 +210,104 @@
 	padding-bottom: 20px;
 }
 
-.year {
-	display: flex;
-	padding: 5px;
-	font-weight: 700;
-	font-size: 17px;
-	line-height: 160%;
+.subheading {
+	padding-bottom: 1em;
 }
 
 .content {
-	padding: 5px;
+	padding-bottom: 1em;
+	padding: 0 1.5em;
+	margin-bottom: 2em;
 }
 
-.experience-content {
-	display: grid;
-	grid-template-columns: 1fr 3fr;
-
-	font-family: 'Arial';
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 160%;
-	color: #4C4C4C;
+li {
+	padding-bottom: .25em;
 }
 
-/*
-.about-subheading {
-	font-family: 'Arial';
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 160%;
-	color: #4C4C4C;
-	/*list-style-type: none;*/
-
-/*
-.temp {
-	display: grid;
-	grid-template-areas:
-		"a b b";
+div strong {
+	font-size: 16px;
+	color: #00008b;
 }
-*/
 
+ul {
+	list-style-type:none;
+	padding-left: 1em;
+}
+
+ol {
+	list-style: none;
+}
+
+ul li {
+	background: #cce5ff;
+	color: darkblue;
+	margin: 5px;
+}
+
+ol li {
+	background: #ffe5e5;
+	color: darkred;
+	margin-left: 35px;
+	margin: 5px;
+}
+
+li::before {
+	content:counter(0);
+	background: #662974;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	display: inline-block;
+	line-height: 2rem;
+	color: white;
+	text-align: center;
+	margin-right: 0.5rem;
+}
+
+ol ol li::before {
+	background: #DE51FF;
+}
+
+ol ol ol li::before {
+	background: #EE9EFF;
+}
 
 h1 {
-	font-family: 'Georgia';
+	font-family: 'RodchenkoCond';
 	font-style: normal;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 110%;
-	letter-spacing: 0.06em;
+	font-weight: 800;
+	font-size: 44px;
+	line-height: 130%;
+	letter-spacing: 0.2em;
 	color: #545454;
 	text-decoration: none;
 }
 
-h2 {
-	font-family: 'Georgia';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 44px;
-	line-height: 130%;
-	/* or 57px */
-	display: flex;
-	align-items: center;
-}
-
-h3 {
-	font-family: 'Georgia';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 35px;
-	line-height: 130%;
-	/* or 45px */
-	letter-spacing: 0.06em;
-	color: #545454;
-}
-
 h4 {
-	font-family: 'Georgia';
+	font-family: 'RodchenkoCond';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 115%;
 	/* identical to box height, or 23px */
-	letter-spacing: 0.06em;
-	color: #545454;
+	letter-spacing: 0.2em;
+	color: #d53e07;
 }
 
 h5 {
-	font-family: 'Georgia';
+	font-family: 'RodchenkoCond';
 	font-style: normal;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 110%;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 115%;
 	/* identical to box height, or 17px */
-	letter-spacing: 0.06em;
-	color: #545454;
+	letter-spacing: 0.2em;
+	color: #7255ce;
+	text-align: center;
+	padding-bottom: .75em;
 }
 
 .nav {
-	/*width: 75%;*/
-
 	padding-top: 16px;
 	padding-bottom: 17px;
 	background: rgba(7, 65, 151, 0.75);
@@ -312,11 +320,12 @@ h5 {
 	justify-content:space-around;
 
 	text-align: right;
-	font-family: 'Arial';
+	font-family: 'RodchenkoCond';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 160%;
+	letter-spacing: 0.2em;
 }
 
 .nav-link a {
@@ -334,3 +343,16 @@ h5 {
 	color: #FAFAFA;
 }
 
+@font-face {
+	font-family: "AvantGarde";
+	src: url("..//fonts/AvantGarde\ Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RodchenkoCond";
+	src: url("..//fonts//RodchenkoCond\ Regular.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

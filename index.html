@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>CV</title>
+    <title>Resume</title>
+    <!-- Подключаем стили для подсветки кода: -->
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
+
     <div class="grid">
 
         <header class="header">
             <nav class="nav">
                 <ul class="nav-links">
-                    <li class="nav-link">
+                    <li class="nav-link nav-link__active">
                         <a href="#home">HOME</a>
                     </li>
                     <li class="nav-link">
@@ -37,31 +43,34 @@
                 </ul>
             </nav>
         </header>
+
         <section id="home" class="home">
-            <h1 class="header-title">Sergey Sychev</h1>
-            <div class="container-home"><img class="cv-img" src="./img/IMG_7201.jpg" alt="cv-img"></div>
-        <section id="contacts" class="contacts">
-            <div class="container-contacts">
-            <div class="contacts-content">
-                <ul class="icons">
+            <div class="home-contacts">
+                <h1 class="home-title">Sergey Sychev</h1>
+                <ul id="contacts" class="icons">
                     <li><a href="mailto:sergeysychou@gmail.com"><img class="icon" src="./img/gmail.svg" alt="icon-email"></a></li>
-                    <li><a href="https://www.linkedin.com/in/sergey-sychev-5742a3bb/"><img class="icon" src="./img/linkedin.svg"
-                                alt="icon-linkedin"></a></li>
-                    <li><a href="https://orcid.org/0000-0001-8213-7374"><img class="icon" src="./img/orcid.svg"
-                                alt="icon-orcid"></a></li>
+                    <li><a href="https://www.linkedin.com/in/sergey-sychev-5742a3bb/"><img class="icon" src="./img/linkedin.svg" alt="icon-linkedin"></a></li>
+                    <li><a href="https://orcid.org/0000-0001-8213-7374"><img class="icon" src="./img/orcid.svg" alt="icon-orcid"></a></li>
                     <li><a href="https://github.com/sesychev"><img class="icon" src="./img/github.svg" alt="icon-github"></a></li>
                     <li><a href="https://sesychev.github.io/rsschool-cv/"><img class="icon" src="./img/pet.svg" alt="icon-web"></a>
                     </li>
                 </ul>
+                <div class="b"></div>
+                <div class="y"></div>
+                <div class="card"></div>
             </div>
+            <div class="item1">
             </div>
-        </section>
+            <div class="item2">
+            </div>
+            <div class="photo">
+            </div>
         </section>
 
         <main class="main">
         <section id="about" class="about">
             <div class="container-about">
-                    <h4 class="heading">ABOUT ME</h4>
+                 <h4 class="heading">ABOUT ME</h4>
                     <div class="subheading">
                         My education was related to Manufacturing engineering, as well as the machining and cutting tools
                         design. After graduating from the University, I was enrolled in a Master's degree program in the field
@@ -79,7 +88,7 @@
 
         <section id="education" class="education">
             <div class="container-education">
-                    <h4 class="heading">EDUCATION</h4>
+                <h4 class="heading">EDUCATION</h4>
                     <div class="education-content">
                         <div class="year">2008 – 2009</div>
                         <div class="subheading"><strong>Mathematician-programmer</strong><br>Belarusian State University, Faculty of advanced training and retraining, Minsk, Belarus</div>
@@ -95,8 +104,8 @@
 
         <section id="interests" class="interests">
             <div class="container-interests">
-                    <h4 class="heading">RESEARCH INTERESTS</h4>
-                    <ul>
+                <h4 class="heading">RESEARCH INTERESTS</h4>
+                    <ul class="ul-iterests">
                         <li>Acoustic Emission (AE)</li>
                         <li>Artificial Intelligence</li>
                         <li>Data Analysis</li>
@@ -147,15 +156,15 @@
         <section id="skills" class="skills">
             <div class="container-skills">
                      <h4 class="heading">TECHNICAL SKILLS</h4>
-                    <ul>
                         <h5>BIM and 3D Modelling</h5>
+                    <ul class="ul-slills">
                         <li>AutoCAD</li>
                         <li>Navisworks</li>
                         <li>Revit</li>
                         <li>SolidWorks</li>
                     </ul>
                         <h5>Programming</h5>
-                    <ul>
+                    <ul class="ul-slills">
                         <li>.NET</li>
                         <li>C#</li>
                         <li>Java</li>
@@ -165,37 +174,49 @@
                         <li>Unix/Linux</li>
                     </ul>
                         <h5>Lab</h5>
-                    <ul>
+                    <ul class="ul-slills">
                         <li>Acoustic Emission Testing (AET)</li>
                         <li>Tribology</li>
                         <li>Vibration</li>
                         <li>Wavelets</li>
                     </ul>
             </div>
-
         </section>
 
-        <section class="code">
-            <div class="container-code">
-                <h4 class="heading">CODE EXAMPLE</h4>
-                <pre>
-                    <code>
-  public class CustomMath 
-  {
-      public static int multiply(int a, int b) 
-      {
-          return a * b;
-      }
-  }
-                    </code>
-                </pre>
+        <section id="languages" class="languages">
+            <div class="container-languages">
+                <h4 class="heading">LANGUAGES</h4>
+                <ul class="ul-languages">
+                    <li>Belarusian and Russian – Native/Bilingual</li>
+                    <li>English – Upper intermediate (IELTS 6.0/B2)</li>
+                    <li>Portuguese – Elementary (CEFR A2)</li>
+                </ul>
             </div>
         </section>
 
-        <section id="courses" class="courses">
-            <div class="container-courses">
+        <section id="page" class="page">
+            <h4 style="display: none;">page</h4>
+            <section class="code">
+                <div class="container-code">
+                    <h4 class="heading">CODE EXAMPLE</h4>
+                    <pre class="prettyprint">
+                        <code lang="cs">
+public class CustomMath 
+{
+    public static int multiply(int a, int b) 
+    {
+        return a * b;
+    }
+}
+                        </code>
+                    </pre>
+                </div>
+            </section>
+            
+            <section id="courses" class="courses">
+                <div class="container-courses">
                     <h4 class="heading">COURSES</h4>
-                    <ul>
+                    <ul class="ul-courses">
                         <li>JS/FE Pre-School 2022Q2</li>
                         <li>.NET Development - EPAM (2022/KZ)</li>
                         <li>.NET Development - EPAM (2021Q4/BY/2)</li>
@@ -203,54 +224,42 @@
                         <li>Программирование на Python - Stepik</li>
                         <li>Python: основы и применение - Stepik</li>
                     </ul>
-            </div>
-        </section>
-        
-        <section id="languages" class="languages">
-            <div class="container-languages">
-                    <h4 class="heading">LANGUAGES</h4>
-                    <ul>
-                        <li>Belarusian and Russian – Native/Bilingual</li>
-                        <li>English – Upper intermediate (IELTS 6.0/B2)</li>
-                        <li>Portuguese – Elementary (CEFR A2)</li>
-                    </ul>
-            </div>
-        </section>
-        
-        <section id="awards" class="awards">
-            <div class="container-awards">
+                </div>
+            </section>
+            
+            <section id="awards" class="awards">
+                <div class="container-awards">
                     <h4 class="heading">AWARDS</h4>
                     <div class="content">Awarded the first prize in Republican contest of students' scientific works of
                         higher education institutions of the Republic of Belarus for the scientific research paper 'Finite
                         Element modelling of orthogonal metal cutting process by the tool with anti-wear coating', 2005</div>
-            </div>
-        </section>
-        
-        <section id="grants" class="grants">
-            <div class="container-grants">
+                </div>
+            </section>
+            
+            <section id="grants" class="grants">
+                <div class="container-grants">
                     <h4 class="heading">GRANTS</h4>
                     <div class="content">
-                        <div><strong>Title:</strong> 'Synthesis of ceramic composite coatings on metals with increased strength and anticorrosion
-                            properties by micro-arc oxidation'<br><strong>
-                            </div>
-                        <div>Project number:</strong> 18-73-00025</div>
-                        </div>
-                    <div class="content">
-                        <div><strong>Title:</strong> 'Experimental and theoretical study of nonlinear dynamic effects of cluster formation during
-                            surface and subsurface destruction in tribological systems at nano- and meso-scale
-                            levels'<br>
-                        <div><strong>Project number:</strong> 10-08-00966</div>
+                        <div><strong>Title:</strong> 'Synthesis of ceramic composite coatings on metals with increased strength and
+                            anticorrosion properties by micro-arc oxidation'<br><strong>Project number:</strong> 18-73-00025</div>
+                        </div>    
                     </div>
-            </div>
-        </section>
-
-        <section id="certifications" class="certifications">
-            <h4 class="heading">CERTIFICATIONS</h4>
-            <ol class="subheading">
-                <li>International English Language Testing System (IELTS), British Council</li>
-                <li>O nível А2 do curso de Português Língua de AcolhimentoO nível А2 do curso de Português Língua de
-                    Acolhimento, Centro de Emprego е Formação Profissional de Coimbra</li>
-            </ol>
+                    <div class="content">
+                        <div><strong>Title:</strong> 'Experimental and theoretical study of nonlinear dynamic effects of cluster
+                            formation during surface and subsurface destruction in tribological systems at nano- and meso-scale
+                            levels'<br><div><strong>Project number:</strong> 10-08-00966</div>
+                        </div>
+                    </div>
+            </section>
+            
+            <section id="certifications" class="certifications">
+                <h4 class="heading">CERTIFICATIONS</h4>
+                <ol class="subheading">
+                    <li>International English Language Testing System (IELTS), British Council, 2021</li>
+                    <li>O nível А2 do curso de Português Língua de AcolhimentoO nível А2 do curso de Português Língua de
+                        Acolhimento, Centro de Emprego е Formação Profissional de Coimbra, 2021</li>
+                </ol>
+            </section>
         </section>
         </main>
  
@@ -265,5 +274,6 @@
         </footer>
 
     </div>
+
 </body>
 </html>

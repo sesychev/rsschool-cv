@@ -5,6 +5,8 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+/* Header */
+/* Main */
 /*https: //www.freepik.com/free-vector/modern-cv-template_13234784.htm#query=cv%20template&position=34&from_view=keyword#position=34&query=cv%20template*/
 /*https: //rs.school/js/*/
 .grid {
@@ -51,8 +53,6 @@
 		"title i i i img";
 	grid-template-columns: max-content repeat(3, 100px) 1fr;
 	grid-template-rows: auto;
-	/*height:min-content;*/
-	/*background: #00BFFF;*/
 }
 
 .home-contacts {
@@ -193,13 +193,11 @@
 		"course grant grant"
 		"code award award"
 		"code certificat certificat";
-	grid-template-columns: repeat (4, 1fr);
+	grid-template-columns: ifr;
 	grid-template-rows: auto;
-	align-content: start;
 }
 
 .courses {
-	/*height:fit-content;*/
 	grid-area: course;
 	background-color: #F5F5DC;
 	background-color: #CC99FE;
@@ -215,13 +213,11 @@
 }
 
 .awards {
-	/*height: fit-content;*/
 	grid-area: award;
 	background-color: #FDEAA8;
 }
 
 .certifications {
-	/*height: fit-content;*/
 	grid-area: certificat;
 	background-color: #FFFDD0;
 	background-color: #e7cacf;
@@ -229,10 +225,6 @@
 }
 
 .code {
-	/*height: fit-content;*/
-
-	/*width: max-content;*/
-	grid-column: col 3 / col 4;
 	grid-area: code;
 	line-height: normal;
 	background-color: black;
@@ -271,10 +263,6 @@
 	align-self: center;
 	width: 1em;
 }
-
-/* Header */
-
-/* Main */
 
 .education-content {
 	display: grid;
@@ -399,14 +387,13 @@ h5 {
 	display: flex;
 	justify-content: space-around;
 	text-align: right;
-	font-family: 'RodchenkoCond';
+	font-family: 'RodchenkoCondBold';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 160%;
 	letter-spacing: 0.2em;
 }
-
 
 .nav-link a {
 	text-decoration: none;
@@ -433,6 +420,13 @@ h5 {
 @font-face {
 	font-family: "RodchenkoCond";
 	src: url("..//fonts//RodchenkoCond\ Regular.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RodchenkoCondBold";
+	src: url("..//fonts/RodchenkoCond\ Bold.otf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }

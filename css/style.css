@@ -8,6 +8,8 @@
 
 /*<li class="nav-link"><a href="#skills">SKILLS</a></li>
 <div class="item1"></div><div class="item2"></div>
+<li><a href="https://sesychev.github.io/rsschool-cv/"><img class="icon" src="./img/pet.svg"
+alt="icon-web"></a></li>
 */
 .grid {
 	max-width: 1280px;
@@ -68,7 +70,8 @@
 }
 
 .nav-link a:hover {
-	color: #d53e07;
+	/*color: #d53e07;*/
+	color: #00008b;
 }
 
 /*Home*/
@@ -153,7 +156,7 @@
 		"experience experience skill"
 		"experience experience language"
 		"page page page";
-	grid-template-columns: 25% 1fr 25%;
+	grid-template-columns: 1.1fr 2fr 1.2fr;
 	grid-template-rows: auto;
 	align-content: start;
 }
@@ -228,7 +231,7 @@
 		"course grant"
 		"code award"
 		"code certificat";
-	grid-template-columns: 1fr 3fr;
+	grid-template-columns: 1fr 2.5fr;
 	grid-template-rows: auto;
 }
 

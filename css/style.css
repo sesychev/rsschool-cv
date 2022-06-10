@@ -39,7 +39,7 @@
 
 .nav {
 	padding-top: 10px;
-	padding-bottom: 9px;
+	padding-bottom: 10px;
 	background: rgb(216, 167, 29, 0.75);
 }
 
@@ -51,7 +51,7 @@
 	font-family: 'RodchenkoCondBold';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 160%;
 	letter-spacing: 0.2em;
 }
@@ -184,17 +184,18 @@
 }
 
 .year {
-	justify-self: center;
 	/*hor*/
-	align-self: center;
+	justify-self: center;
 	/*ver*/
+	align-self: center;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 160%;
 	color: #004f49;
 	width: max-content;
 	text-align: center;
-}
+	font-stretch: ultra-condensed;
+	}
 
 .experience {
 	grid-area: experience;
@@ -219,18 +220,21 @@
 	/*background-color: rgb(240, 188, 140);*/
 }
 
+/*Page*/
 .page {
 	grid-area: page;
 	display: grid;
 	grid-template-areas:
-		"course grant grant"
-		"code award award"
-		"code certificat certificat";
-	grid-template-columns: max-content 1fr;
+		"course grant"
+		"code award"
+		"code certificat";
+	grid-template-columns: 1fr 3fr;
 	grid-template-rows: auto;
 }
 
 .courses {
+	/*width: auto;*/
+	/*width: min-content;*/
 	grid-area: course;
 	background-color: #F5F5DC;
 	background-color: #CC99FE;
@@ -258,7 +262,7 @@
 }
 
 .code {
-	/*width: auto;*/
+	justify-self: stretch;
 	grid-area: code;
 	line-height: normal;
 	background-color: black;
@@ -272,7 +276,7 @@
 }
 
 #code__text {
-	padding: 0 10px;
+	padding: 0 5px;
 }
 
 /*Footer*/
@@ -331,6 +335,7 @@
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	letter-spacing: 50%;
 }
 
 .subheading {
@@ -350,7 +355,7 @@ div strong {
 
 ul {
 	list-style-type: none;
-	padding-left: 1em;
+	padding-left: 0;
 }
 
 ul li {
@@ -376,7 +381,6 @@ ol {
 .ul-languages li {
 	background: #FDF4E3;
 	color: #004f49;
-	;
 }
 
 .ul-courses li {

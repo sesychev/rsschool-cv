@@ -1,1 +1,2 @@
-https://sesychev.github.io/rsschool-cv/
+# rsschool-cv
+**HTML:**[ CV](https://sesychev.github.io/rsschool-cv/)

@@ -81,7 +81,7 @@ alt="icon-web"></a></li>
 
 /*Home*/
 .home {
-	height: 50vh;
+	/*height: 50vh;*/
 	grid-area: home;
 	display: grid;
 	grid-template-columns: 10% 1fr 2fr;
@@ -493,4 +493,51 @@ h3 {
 	src: url("../fonts/RodchenkoCond\ Bold.otf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
+}
+
+/**/
+@media (max-width: 900px) {
+.home {
+  display: block;
+}
+
+.main {
+	grid-template-areas:
+		"about about about"
+		"education education education"
+		"experience experience experience"
+
+    "interest skill skill"
+		"language skill skill"
+		"page page page";
+  grid-template-columns: 1fr 2fr;
+}
+}
+
+@media (max-width: 700px) {
+.home {
+  display: block;
+}
+
+.main {
+	grid-template-areas:
+		"about about about"
+		"education education education"
+		"experience experience experience"
+    "skill skill skill"
+    "interest interest interest"
+    "language language language"
+
+		"page page page";
+}
+
+.page {
+	grid-template-areas:
+    "award award"
+		"grant grant"
+		"course course"
+    "certificat certificat"
+		"code projects";
+	grid-template-columns: 1fr 2.5fr;
+}
 }

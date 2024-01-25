@@ -1,14 +1,14 @@
 *,
 *::before,
 *::after {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 a {
-	text-decoration: none;
-	cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*<li class="nav-link"><a href="#skills">SKILLS</a></li>
@@ -17,134 +17,134 @@ a {
 alt="icon-web"></a></li>
 */
 .grid {
-	max-width: 1280px;
-	padding: 0 40px;
-	width: 100%;
-	margin: auto;
+  max-width: 1280px;
+  padding: 0 20px;
+  width: 100%;
+  margin: auto;
 
-	display: grid;
-	grid-template-areas:
-		"head"
-		"home"
-		"main"
-		"footer";
-	grid-template-columns: 1fr;
-	grid-template-rows: auto 1fr auto;
-	font-family: 'AvantGarde';
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 160%;
+  display: grid;
+  grid-template-areas:
+    "head"
+    "home"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  font-family: "AvantGarde";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
 }
 
 /*Header*/
 .header {
-	grid-area: head;
-	position: sticky;
-	top: 0;
-	z-index: 1;
+  grid-area: head;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .nav {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background: rgb(216, 167, 29, 0.75);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgb(216, 167, 29, 0.75);
 }
 
 .nav-links {
-	display: grid;
-	grid-template-columns: repeat(6, auto);
-	grid-template-rows: auto;
-	list-style-type: none;
-	font-family: 'RodchenkoCondBold';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 17px;
-	line-height: 160%;
-	letter-spacing: 0.2em;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: auto;
+  list-style-type: none;
+  font-family: "RodchenkoCondBold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2em;
 }
 
 .nav-link a {
-	text-decoration: none;
-	transition: color 0.2s linear;
-	color: black;
+  text-decoration: none;
+  transition: color 0.2s linear;
+  color: black;
 }
 
 .nav-link__active a {
-	color: #d53e07;
-	border-bottom: 3px solid #d53e07;
+  color: #d53e07;
+  border-bottom: 3px solid #d53e07;
 }
 
 .nav-link a:hover {
-	/*color: #d53e07;*/
-	color: #00008b;
+  /*color: #d53e07;*/
+  color: #00008b;
 }
 
 /*Home*/
 .home {
-	/*height: 50vh;*/
-	grid-area: home;
-	display: grid;
-	grid-template-columns: 10% 1fr 2fr;
-	grid-template-rows: 1fr 1fr;
-	justify-content: space-between;
+  /*height: 50vh;*/
+  grid-area: home;
+  display: grid;
+  grid-template-columns: 10% 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
 }
 
 .home-contacts {
-	grid-column: 1 / 2;
-	width: max-content;
-	display: grid;
-	grid-template-columns: 20% auto 1fr;
-	grid-template-rows: 1fr 1fr;
-	background: white;
+  grid-column: 1 / 2;
+  width: max-content;
+  display: grid;
+  grid-template-columns: 20% auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  background: white;
 }
 
 .b {
-	grid-column: 1 / 2;
-	background-color: black;
+  grid-column: 1 / 2;
+  background-color: black;
 }
 
 .y {
-	grid-column: 1 / 2;
-	background-color: rgb(216, 167, 29);
+  grid-column: 1 / 2;
+  background-color: rgb(216, 167, 29);
 }
 
 .home-title {
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
-	margin-top: 1.25em;
-	background: #d53e07;
-	height: max-content;
-	justify-self: stretch;
-	text-align: center;
-	padding: 0 .25em;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin-top: 1.25em;
+  background: #d53e07;
+  height: max-content;
+  justify-self: stretch;
+  text-align: center;
+  padding: 0 0.25em;
 }
 
 .item1 {
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-	background: #004f49;
-	background: #00BFFF;
-	clip-path: polygon(0 0, 0 0, 100% 0, 0 100%);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background: #004f49;
+  background: #00bfff;
+  clip-path: polygon(0 0, 0 0, 100% 0, 0 100%);
 }
 
 .item2 {
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-	background: #004f49;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background: #004f49;
 
-	clip-path: polygon(0 0, 0 0, 100% 0, 100% 100%);
-	clip-path: polygon(0 0, 0 0, 0 100%, 100% 100%);
-	clip-path: polygon(0 0, 0 0, 0 100%, 100% 100%);
-	clip-path: polygon(0 100%, 0 100%, 100% 100%, 100% 0);
-	clip-path: polygon(0 0, 0 0, 100% 100%, 100% 0);
-	clip-path: polygon(0 0, 0 0, 0 100%, 100% 100%);
+  clip-path: polygon(0 0, 0 0, 100% 0, 100% 100%);
+  clip-path: polygon(0 0, 0 0, 0 100%, 100% 100%);
+  clip-path: polygon(0 0, 0 0, 0 100%, 100% 100%);
+  clip-path: polygon(0 100%, 0 100%, 100% 100%, 100% 0);
+  clip-path: polygon(0 0, 0 0, 100% 100%, 100% 0);
+  clip-path: polygon(0 0, 0 0, 0 100%, 100% 100%);
 }
 
 .photo {
-	grid-column: 3 / 5;
-	grid-row: 1 / 3;
-	margin: auto;
-	/*width: 100%;
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
+  margin: auto;
+  /*width: 100%;
 	height: 100%;
 	background-image: url("../img/IMG_7201.jpg");
 	background-repeat: no-repeat;
@@ -153,391 +153,388 @@ alt="icon-web"></a></li>
 }
 
 .photo img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 /*Main*/
 .main {
-	grid-area: main;
-	display: grid;
-	grid-template-areas:
-		"about about about"
-		"interest education education"
-		"experience experience skill"
-		"experience experience language"
-		"page page page";
-	grid-template-columns: 1.1fr 2fr 1.2fr;
-	grid-template-rows: auto;
-	align-content: start;
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "about about about"
+    "interest education education"
+    "experience experience skill"
+    "experience experience language"
+    "page page page";
+  grid-template-columns: 1.1fr 2fr 1.2fr;
+  grid-template-rows: auto;
+  align-content: start;
 }
 
 .about {
-	grid-area: about;
-	background-color: #FDF4E3;
-	/*background-color: rgb(228, 222, 208);*/
-	padding: 0 1.5em;
+  grid-area: about;
+  background-color: #fdf4e3;
+  /*background-color: rgb(228, 222, 208);*/
+  padding: 0 1.5em;
 }
 
 .interests {
-	grid-area: interest;
-	/*width: auto;*/
-	background-color: #F5F5DC;
-	/*background-color: rgba(245, 238, 225);*/
+  grid-area: interest;
+  /*width: auto;*/
+  background-color: #f5f5dc;
+  /*background-color: rgba(245, 238, 225);*/
 }
 
 .education {
-	grid-area: education;
-	background-color: #FFFDD0;
-	/*background-color: rgb(236, 207, 168);*/
+  grid-area: education;
+  background-color: #fffdd0;
+  /*background-color: rgb(236, 207, 168);*/
 }
 
 .education-content {
-	display: grid;
-	grid-template-columns: 1fr 3fr;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 .year {
-	/*hor*/
-	justify-self: center;
-	/*ver*/
-	align-self: center;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 160%;
-	color: #004f49;
-	width: max-content;
-	text-align: center;
-	font-stretch: ultra-condensed;
-	}
+  /*hor*/
+  justify-self: center;
+  /*ver*/
+  align-self: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #004f49;
+  /*width: max-content;*/
+  text-align: center;
+  font-stretch: ultra-condensed;
+}
 
 .experience {
-	grid-area: experience;
-	background-color: #FDEAA8;
+  grid-area: experience;
+  background-color: #fdeaa8;
 }
 
 .experience-content {
-	display: grid;
-	grid-template-columns: 1fr 3fr;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 .skills {
-	grid-area: skill;
-	background-color: rgb(241, 189, 124);
-	background-color: #D2B48C;
+  grid-area: skill;
+  background-color: rgb(241, 189, 124);
+  background-color: #d2b48c;
 }
 
 .languages {
-	grid-area: language;
-	background-color: #F5F5DC;
-	background-color: #d89a5b;
-	/*background-color: rgb(240, 188, 140);*/
+  grid-area: language;
+  background-color: #f5f5dc;
+  background-color: #d89a5b;
+  /*background-color: rgb(240, 188, 140);*/
 }
 
 /*Page*/
 .page {
-	grid-area: page;
-	display: grid;
-	grid-template-areas:
-		"course grant"
-		"projects award"
-		"code certificat";
-	grid-template-columns: 1fr 2.5fr;
-	grid-template-rows: auto;
+  grid-area: page;
+  display: grid;
+  grid-template-areas:
+    "course grant"
+    "projects award"
+    "code certificat";
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-rows: auto;
 }
 
 .courses {
-	/*width: auto;*/
-	/*width: min-content;*/
-	grid-area: course;
-	background-color: #F5F5DC;
-	background-color: #CC99FE;
-	background-color: #b39c65;
-	/*background-color: rgba(245, 238, 225);*/
+  /*width: auto;*/
+  /*width: min-content;*/
+  grid-area: course;
+  background-color: #f5f5dc;
+  background-color: #cc99fe;
+  background-color: #b39c65;
+  /*background-color: rgba(245, 238, 225);*/
 }
 
 .projects {
-	/*width: auto;*/
-	/*width: min-content;*/
-	grid-area: projects;
-	background-color: #F5F5DC;
-	background-color: #CC99FE;
-	background-color: #b39c65;
-	background-color: #F5F5DC;
-	background-color: #d89a5b;
-	background-color: rgb(241, 189, 124);
-	background-color: #D2B48C;
-	/*background-color: rgba(245, 238, 225);*/
+  /*width: auto;*/
+  /*width: min-content;*/
+  grid-area: projects;
+  background-color: #f5f5dc;
+  background-color: #cc99fe;
+  background-color: #b39c65;
+  background-color: #f5f5dc;
+  background-color: #d89a5b;
+  background-color: rgb(241, 189, 124);
+  background-color: #d2b48c;
+  /*background-color: rgba(245, 238, 225);*/
 }
 
 .grants {
-	grid-area: grant;
-	background-color: #D2B48C;
-	background-color: #d8ae64;
-	/*background-color: rgb(216, 196, 168);*/
+  grid-area: grant;
+  background-color: #d2b48c;
+  background-color: #d8ae64;
+  /*background-color: rgb(216, 196, 168);*/
 }
 
 .awards {
-	grid-area: award;
-	background-color: #FDEAA8;
+  grid-area: award;
+  background-color: #fdeaa8;
 }
 
 .certifications {
-	grid-area: certificat;
-	background-color: #FFFDD0;
-	background-color: #e7cacf;
-	/*background-color: rgb(236, 207, 168);*/
+  grid-area: certificat;
+  background-color: #fffdd0;
+  background-color: #e7cacf;
+  /*background-color: rgb(236, 207, 168);*/
 }
 
 .code {
-	justify-self: stretch;
-	grid-area: code;
-	line-height: normal;
-	background-color: black;
-	color: #004f49;
-	padding: 0;
+  justify-self: stretch;
+  grid-area: code;
+  line-height: normal;
+  background-color: black;
+  color: #004f49;
+  padding: 0;
 }
 
 .prettyprint {
-	padding-left: 0;
-	padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #code__text {
-	padding: 0 5px;
+  padding: 0 5px;
 }
 
 /*Footer*/
 .footer {
-	grid-area: footer;
-	display: grid;
-	grid-template-columns: max-content 1.5fr 1fr;
-	grid-template-rows: max-content;
-	justify-content: space-around;
-	background: rgb(216, 167, 29);
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: max-content 1.5fr 1fr;
+  grid-template-rows: max-content;
+  justify-content: space-around;
+  background: rgb(216, 167, 29);
 }
 
 .rsschool-logo {
-	align-self: center;
-	grid-column: 1 / 2;
-	width: 100px;
+  align-self: center;
+  grid-column: 1 / 2;
+  width: 100px;
 }
 
 /**/
 .icons {
-	justify-self: end;
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
-	display: grid;
-	grid-template-columns: auto;
-	grid-auto-flow: column;
-	justify-items: center;
-	align-items: center;
-	padding: 0;
-	/*background-color: #808080;*/
-	/*background-color: #d53e07;*/
+  justify-self: end;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+  /*background-color: #808080;*/
+  /*background-color: #d53e07;*/
 }
 
 .icon {
-	width: 44px;
-	height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .author {
-	grid-column: 3 / 4;
-	height: max-content;
-	align-self: center;
-	justify-self: end;
-	display: grid;
-	grid-template-columns: auto 1fr;
+  grid-column: 3 / 4;
+  height: max-content;
+  align-self: center;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 .copyright-icon {
-	align-self: center;
-	width: 1em;
-	margin-right: 0.5em;
+  align-self: center;
+  width: 1em;
+  margin-right: 0.5em;
 }
 
 /*The end*/
 .heading {
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	letter-spacing: 50%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 50%;
 }
 
 .subheading {
-	padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 .content {
-	padding-bottom: .5em;
-	padding: 0 1.5em;
-	margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  padding: 0 1.5em;
+  margin-bottom: 1em;
 }
 
 div strong {
-	font-size: 16px;
-	color: #00008b;
+  font-size: 16px;
+  color: #00008b;
 }
 
 ul {
-	list-style-type: none;
-	padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 ul li {
-	margin: 5px;
+  margin: 5px;
 }
 
 ol {
-	list-style-type: upper-roman;
-	list-style-position: inside;
-	padding-left: 1em;
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  padding-left: 1em;
 }
 
 .ul-iterests li {
-	background: #cce5ff;
-	color: #00008b;
+  background: #cce5ff;
+  color: #00008b;
 }
 
 .ul-slills li {
-	background: #cce5ff;
-	color: #00008b;
+  background: #cce5ff;
+  color: #00008b;
 }
 
 .ul-languages li {
-	background: #FDF4E3;
-	color: #004f49;
+  background: #fdf4e3;
+  color: #004f49;
 }
 
 .ul-courses li {
-	background: #FDF4E3;
-	color: #004f49;
+  background: #fdf4e3;
+  color: #004f49;
 }
 
 .ul-projects li a {
-	display: flex;
-	align-items: center;
-	background: #cce5ff;
-	/*color: #00008b;*/
+  display: flex;
+  align-items: center;
+  background: #cce5ff;
+  /*color: #00008b;*/
 }
 
 .ul-projects h3 {
-	padding-bottom:unset;
+  padding-bottom: unset;
 }
 
 .ul-projects img {
-	margin-right: 20px;
+  margin-right: 20px;
 }
 
 .ul-projects .icon {
-	width: 24px;
-	height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 h1 {
-	font-family: 'RodchenkoCond';
-	font-style: normal;
-	font-weight: 800;
-	font-size: 44px;
-	line-height: 160%;
-	letter-spacing: 0.2em;
-	text-decoration: none;
+  font-family: "RodchenkoCond";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 160%;
+  letter-spacing: 0.2em;
+  text-decoration: none;
 }
 
 h2 {
-	font-family: 'RodchenkoCond';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 115%;
-	/* identical to box height, or 23px */
-	letter-spacing: 0.2em;
-	color: #d53e07;
+  font-family: "RodchenkoCond";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  letter-spacing: 0.2em;
+  color: #d53e07;
 }
 
 h3 {
-	font-family: 'RodchenkoCond';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 17px;
-	line-height: 110%;
-	letter-spacing: 0.2em;
-	color: #7255ce;
-	color: #0000FF;
-	text-align: center;
-	padding-bottom: .75em;
+  font-family: "RodchenkoCond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 110%;
+  letter-spacing: 0.2em;
+  color: #7255ce;
+  color: #0000ff;
+  text-align: center;
+  padding-bottom: 0.75em;
 }
 
 .active {
-	color: #F2785C;
-}
-
-
-@font-face {
-	font-family: "AvantGarde";
-	src: url("../fonts/AvantGarde\ Regular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
+  color: #f2785c;
 }
 
 @font-face {
-	font-family: "RodchenkoCond";
-	src: url("../fonts/RodchenkoCond\ Regular.otf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
+  font-family: "AvantGarde";
+  src: url("../fonts/AvantGarde\ Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-	font-family: "RodchenkoCondBold";
-	src: url("../fonts/RodchenkoCond\ Bold.otf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
+  font-family: "RodchenkoCond";
+  src: url("../fonts/RodchenkoCond\ Regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "RodchenkoCondBold";
+  src: url("../fonts/RodchenkoCond\ Bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 
 /**/
 @media (max-width: 900px) {
-.home {
-  display: block;
-}
+  .home {
+    display: block;
+  }
 
-.main {
-	grid-template-areas:
-		"about about about"
-		"education education education"
-		"experience experience experience"
-
-    "interest skill skill"
-		"language skill skill"
-		"page page page";
-  grid-template-columns: 1fr 2fr;
-}
+  .main {
+    grid-template-areas:
+      "about about about"
+      "education education education"
+      "experience experience experience"
+      "interest skill skill"
+      "language skill skill"
+      "page page page";
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 @media (max-width: 700px) {
-.home {
-  display: block;
-}
+  .home {
+    display: block;
+  }
 
-.main {
-	grid-template-areas:
-		"about about about"
-		"education education education"
-		"experience experience experience"
-    "skill skill skill"
-    "interest interest interest"
-    "language language language"
+  .main {
+    grid-template-areas:
+      "about about about"
+      "education education education"
+      "experience experience experience"
+      "skill skill skill"
+      "interest interest interest"
+      "language language language"
+      "page page page";
+  }
 
-		"page page page";
-}
-
-.page {
-	grid-template-areas:
-    "award award"
-		"grant grant"
-		"course course"
-    "certificat certificat"
-		"code projects";
-	grid-template-columns: 1fr 2.5fr;
-}
+  .page {
+    grid-template-areas:
+      "award award"
+      "grant grant"
+      "course course"
+      "certificat certificat"
+      "code projects";
+    grid-template-columns: 1fr 2.5fr;
+  }
 }
